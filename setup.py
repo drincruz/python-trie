@@ -20,5 +20,5 @@ setup(
     author='Adrian Cruz',
     author_email='drincruz@gmail.com',
     license='BSD',
-    long_description=_read('README')
+    long_description=_read('README.md')
 )

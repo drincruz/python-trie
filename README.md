@@ -27,3 +27,9 @@ Unit Testing
 nose is used for unit testing and simple unit tests
 can be run with the following in the source trie directory:
     `nosetests`
+
+
+Installation
+----------
+You can install this as usual with `setup.py`. The usual "use virtualenv to test first" warnings apply.
+    python setup.py install

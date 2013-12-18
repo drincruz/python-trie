@@ -32,4 +32,4 @@ can be run with the following in the source trie directory:
 Installation
 ----------
 You can install this as usual with `setup.py`. The usual "use virtualenv to test first" warnings apply.
-    python setup.py install
+    `python setup.py install`

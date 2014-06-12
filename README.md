@@ -1,4 +1,4 @@
-python-trie
+TriePy
 ===========
 
 A simple trie implementation in Python

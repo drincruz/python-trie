@@ -3,9 +3,9 @@ A simple module for creating and manipulating a trie
 """
 
 
-class Trie:
+class TriePy:
     # A terminator to represent and end of a path
-    TRIE_TERMINATOR = '!THIS_IS_THE_END!'
+    __TRIE_TERMINATOR = '!THIS_IS_THE_END!'
 
     def __init__(self):
         """
@@ -16,7 +16,7 @@ class Trie:
         """
         self.root = {}
 
-    def add_word(self, word):
+    def addWord(self, word):
         """
         Insert a word into a trie
 
@@ -28,9 +28,9 @@ class Trie:
         current_node = self.root
         for char in word:
             current_node = current_node.setdefault(char, {})
-        current_node.setdefault(self.TRIE_TERMINATOR, {"word":word})
+        current_node.setdefault(self.__TRIE_TERMINATOR, {"word":word})
 
-    def contains_word(self, word):
+    def containsWord(self, word):
         """
         Checks if a path is found in a trie
 
@@ -48,7 +48,7 @@ class Trie:
                 return False
 
         # Check if there is a path terminator here since we are at the end of a path
-        if self.TRIE_TERMINATOR in current_node:
+        if self.__TRIE_TERMINATOR in current_node:
             return True
         else:
             return False

@@ -1,5 +1,6 @@
 """
-__init__ file for convenient "from trie import Trie"
+__init__ file for convenient "from trie import TriePy"
+
 """
 
-from trie import Trie
+from trie import TriePy

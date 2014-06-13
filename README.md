@@ -11,12 +11,12 @@ Example
 ----------
     >>> from trie import TriePy
     >>> t = TriePy()
-    >>> t.add_word("dog")
-    >>> t.add_word("doggy")
-    >>> t.add_word("dogs")
-    >>> t.contains_word("dog")
+    >>> t.addWord("dog")
+    >>> t.addWord("doggy")
+    >>> t.addWord("dogs")
+    >>> t.containsWord("dog")
     True
-    >>> t.contains_word("dogg")
+    >>> t.containsWord("dogg")
     False
     >>> t.root
     {'d': {'o': {'g': {'!THIS_IS_THE_END!': {'word': 'dog'}, 's': {'!THIS_IS_THE_END!': {'word': 'dogs'}}, 'g': {'y': {'!THIS_IS_THE_END!': {'word': 'doggy'}}}}}}}

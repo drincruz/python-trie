@@ -9,8 +9,8 @@ data structure. Essentially, it is creating nested dictionaries.
 
 Example
 ----------
-    >>> from trie import Trie
-    >>> t = Trie()
+    >>> from trie import TriePy
+    >>> t = TriePy()
     >>> t.add_word("dog")
     >>> t.add_word("doggy")
     >>> t.add_word("dogs")
@@ -31,5 +31,10 @@ can be run with the following in the source trie directory:
 
 Installation
 ----------
-You can install this as usual with `setup.py`. The usual "use virtualenv to test first" warnings apply.
+You can install this as usual with `setup.py`. 
     `python setup.py install`
+
+You can also install this via pip.
+    `pip install TriePy`
+
+The usual "use virtualenv to test first" warnings apply.

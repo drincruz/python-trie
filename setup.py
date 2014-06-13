@@ -13,8 +13,8 @@ def _read(filename):
     return open(os.path.join(os.path.dirname(__file__), filename)).read()
 
 setup(
-    name='Trie',
-    version='0.1',
+    name='TriePy',
+    version='0.1.1',
     packages=find_packages(),
     description='Simple Python Trie Data Structure',
     author='Adrian Cruz',

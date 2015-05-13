@@ -1,9 +1,14 @@
 """
 A simple module for creating and manipulating a trie
+
 """
 
 
-class TriePy:
+class TriePy(object):
+    """
+    Data structure class to house the trie
+
+    """
     # A terminator to represent and end of a path
     __TRIE_TERMINATOR = '!THIS_IS_THE_END!'
 

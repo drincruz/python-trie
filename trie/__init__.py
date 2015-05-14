@@ -1,6 +1,11 @@
 """
-__init__ file for convenient "from trie import TriePy"
+__init__
 
 """
 
-from trie import TriePy
+
+# Convenience import to not have from trie.trie import TriePy
+# and just have from trie import TriePy
+from .trie import TriePy
+
+

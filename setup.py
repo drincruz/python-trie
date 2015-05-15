@@ -15,7 +15,7 @@ def _read(filename):
 
 setup(
     name='TriePy',
-    version='0.2',
+    version='0.2.1',
     packages=find_packages(),
     description='Simple Python Trie Data Structure',
     author='Adrian Cruz',

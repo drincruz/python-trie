@@ -19,7 +19,7 @@ Example
     >>> t.contains_word("dogg")
     False
     >>> t.root
-    {'d': {'o': {'g': {'!THIS_IS_THE_END!': {'word': 'dog'}, 's': {'!THIS_IS_THE_END!': {'word': 'dogs'}}, 'g': {'y': {'!THIS_IS_THE_END!': {'word': 'doggy'}}}}}}}
+    {'d': {'o': {'g': {'\0': {'word': 'dog'}, 's': {'\0': {'word': 'dogs'}}, 'g': {'y': {'\0': {'word': 'doggy'}}}}}}}
 
 
 Unit Testing

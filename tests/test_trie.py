@@ -15,7 +15,7 @@ def test_abc_add_word():
     my_test = {"a":
                     {"b": 
                         {"c": 
-                            {"!THIS_IS_THE_END!":
+                            {"\0":
                                 {"word": "abc"}
                             }
                         }
@@ -34,8 +34,8 @@ def test_asterisk_add_word():
     my_test = {"*":
                 {"x":
                     {"*":
-                        { "z":
-                            {"!THIS_IS_THE_END!":
+                        {"z":
+                            {"\0":
                                 {"word": "*x*z"}
                             }
                         }

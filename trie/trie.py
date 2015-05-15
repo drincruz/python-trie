@@ -18,31 +18,34 @@ class TriePy(object):
         But, since we utilize a dictionary as the
         underlying data structure, we just create an
         empty dictionary.
+
+        :return:
         """
         self.root = {}
 
-    def addWord(self, word):
+    def add_word(self, word):
         """
         Insert a word into a trie
 
-        Keyword arguments:
-        word -- word to parse
+        :param word:
+        :return:
         """
-        if None is word:
+        if not word:
             return None
         current_node = self.root
         for char in word:
             current_node = current_node.setdefault(char, {})
-        current_node.setdefault(self.__TRIE_TERMINATOR, {"word":word})
 
-    def containsWord(self, word):
+        current_node.setdefault(self.__TRIE_TERMINATOR, {"word": word})
+
+    def contains_word(self, word):
         """
         Checks if a path is found in a trie
 
-        Keyword arguments:
-        word -- word to check
+        :param word:
+        :return:
         """
-        if None is word:
+        if not word:
             return False
 
         current_node = self.root
@@ -52,7 +55,8 @@ class TriePy(object):
             else:
                 return False
 
-        # Check if there is a path terminator here since we are at the end of a path
+        # Check if there is a path terminator here since
+        # we are at the end of a path
         if self.__TRIE_TERMINATOR in current_node:
             return True
         else:

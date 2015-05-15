@@ -3,6 +3,7 @@
 import os
 from setuptools import setup, find_packages
 
+
 def _read(filename):
     """
     Reads a file
@@ -14,11 +15,11 @@ def _read(filename):
 
 setup(
     name='TriePy',
-    version='0.1.4',
+    version='0.2',
     packages=find_packages(),
     description='Simple Python Trie Data Structure',
     author='Adrian Cruz',
     author_email='drincruz@gmail.com',
-    license='BSD',
+    license='MIT',
     long_description=_read('README.md')
 )

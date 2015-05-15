@@ -10,7 +10,7 @@ class TriePy(object):
 
     """
     # A terminator to represent and end of a path
-    __TRIE_TERMINATOR = '!THIS_IS_THE_END!'
+    __TRIE_TERMINATOR = '\0'
 
     def __init__(self):
         """
